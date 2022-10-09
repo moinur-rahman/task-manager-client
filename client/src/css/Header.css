@@ -1,0 +1,15 @@
+.navigation-bar{
+  width: 100vw;
+    flex:0 1;
+  }
+
+.navigation-bar ul{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navigation-bar ul li{
+  width: 100px;
+  list-style: none;
+
+}

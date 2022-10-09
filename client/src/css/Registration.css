@@ -1,0 +1,179 @@
+.registration-body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.parent-container {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  flex: 1 1;
+}
+
+.child-container{
+  width: 402px;
+  height: 500px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 40px 30px;
+}
+.child-container.registration {
+  height: 620px;
+}
+
+.child-container .login-text {
+  color: #111;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 20px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.child-container .login-social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  margin-bottom: 25px;
+}
+
+.child-container .login-social a {
+  padding: 12px;
+  margin: 10px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.child-container .login-social a i {
+  margin-right: 5px;
+}
+
+.child-container .login-social a.facebook {
+  background: #4267b2;
+}
+
+.child-container .login-social a.twitter {
+  background: #1da1f2;
+}
+
+.child-container .login-social a.google-plus {
+  background: #db4a39;
+}
+
+.child-container .login-social a.linkedin {
+  background: #0e76a8;
+}
+
+.child-container .login-social a.facebook:hover {
+  background: #3d5fa3;
+}
+
+.child-container .login-social a.twitter:hover {
+  background: #1991db;
+}
+
+.child-container .login-social a.google-plus:hover {
+  background: #ca4334;
+}
+
+.child-container .login-social a.linkedin:hover {
+  background: #0b5c81;
+}
+
+.child-container .login-email .input-group {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+}
+
+.child-container .login-email .input-group input {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #e7e7e7;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: transparent;
+  outline: none;
+  transition: 0.3s;
+}
+
+.child-container .login-email .input-group input:focus,
+.child-container .login-email .input-group input:valid {
+  border-color: #a29bfe;
+}
+
+.child-container .login-email .input-group .btn {
+  display: block;
+  width: 100%;
+  padding: 15px 20px;
+  text-align: center;
+  border: none;
+  background: #a29bfe;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.child-container .login-email .input-group .btn:hover {
+  transform: translateY(-5px);
+  background: #6c5ce7;
+}
+
+.login-register-text {
+  color: #111;
+  font-weight: 600;
+}
+
+.login-register-text a {
+  text-decoration: none;
+  color: #6c5ce7;
+}
+
+.home-text {
+  text-align: center;
+}
+
+
+.success-message
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 430px) {
+  .child-container {
+    width: 300px;
+  }
+  .child-container .login-social {
+    display: block;
+  }
+  .child-container .login-social a {
+    display: block;
+  }
+}
+
+.show-text {
+  color: red;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
